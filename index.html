@@ -234,25 +234,24 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/11/Tomcat%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/">Tomcat常见错误问题</a>
+      <a class="article-title" href="/2017/01/12/Tomcat%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/">Tomcat常见错误问题</a>
     </h1>
   
 
         
-        <a href="/2017/01/11/Tomcat%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2017-01-11T01:13:41.302Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-11</time>
+        <a href="/2017/01/12/Tomcat%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2017-01-12T01:38:45.465Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Tomcat������������"><a href="#Tomcat������������" class="headerlink" title="Tomcat������������"></a><strong><em>Tomcat������������</em></strong></h2><ol>
-<li><p><em>��������</em>(start.bat dos����ڴ����д�����Ϣ������exe����ʧ��)<br>���:һ���Ƕ˿ڳ�ͻ���˿ڱ���Ľ���ռ�û���tomcat���������Ρ��������������:һ������DOS��������netstat -ano���ҵ�ռ��8080�˿ڽ��̵�PID���������������kill��ռ��8080�˿ڵĽ��̡������޸�Tomcat��װ�ļ����µ�confĿ¼��server.xml�޸��ڲ���<port />���ֵ����Ϊ�����˿ڡ�����ʹ�õ�һ�ַ�����</p>
-</li>
-<li><p><em>����һ������</em>(dos�����һ����������exe������Ч)<br>���:һ���ǻ�������û���úã�JAVA_HOME������Ϣ�����������ü��ɡ�JAVA_HOME=%��%���ʺŴ���jdk��װ·����</p>
-</li>
-</ol>
+        <p>  <em>启动报错</em></p>
+<h3 id="start-bat-dos命令黑窗口有错误信息；或者exe启动失败"><a href="#start-bat-dos命令黑窗口有错误信息；或者exe启动失败" class="headerlink" title="(start.bat dos命令黑窗口有错误信息；或者exe启动失败)"></a>(start.bat dos命令黑窗口有错误信息；或者exe启动失败)</h3><p>原因:一般是端口冲突，端口被别的进程占用或者tomcat开启了两次。</p>
+<p>有两个解决方法:<br>    一是启动DOS窗口输入netstat -ano，找到占用8080端口进程的PID，再在任务管理器kill在占用8080端口的进程。</p>
+<pre><code>二是修改Tomcat安装文件夹下的conf目录的server.xml修改内部的&lt;port /&gt;里的值，改为其他端口。建议使用第一种方案。</code></pre><p> <em>启动一闪而过</em></p>
+<h3 id="dos命令窗口一闪而过或者exe启动无效"><a href="#dos命令窗口一闪而过或者exe启动无效" class="headerlink" title="(dos命令窗口一闪而过或者exe启动无效)"></a>(dos命令窗口一闪而过或者exe启动无效)</h3><p> 解决:一般是环境变量没配置好，JAVA_HOME配置信息有误，重新配置即可。<br> JAVA_HOME=%？%。问号代表jdk安装路径。</p>
 
       
 
@@ -265,7 +264,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/11/Tomcat%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/01/12/Tomcat%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/">展开全文 >></a>
         </p>
       
 
